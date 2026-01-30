@@ -1,0 +1,195 @@
+Linux commands
+========
+1. ls- The most frequently used command in Linux to list directories
+
+2. pwd- Print working directory command in Linux
+
+3. cd- Linux command to navigate through directories
+
+4. mkdir- Command used to create directories in Linux [ mkdir -p at time both files ]
+
+5. mv- Move or rename files in Linux
+
+6. cp- Similar usage as mv but for copying files in Linux
+
+7. rm- Delete files or directories
+
+8. touch- Create blank/empty files
+
+9. ln- Create symbolic links (shortcuts) to other files
+
+10.clear- Clear the terminal display
+
+11. cat- Display file contents on the terminal
+
+12.echo- Print any text that follows the command
+
+13.less- Linux command to display paged outputs in the terminal
+
+14.man- Access manual pages for all Linux commands
+
+15.uname- Linux command to get basic information about the OS
+
+16.whoami- Get the active username
+
+17.tar- Command to extract and compress files in Linux
+
+18.tar-cvf aws.tar aws/
+
+19.tar-xvf
+
+20.grep- Search for a string within an output
+
+21.head- Return the specified number of lines from the top
+
+22.tail- Return the specified number of lines from the bottom
+
+23.diff- Find the difference between two files
+
+24.cmp- Allows you to check if two files are identical
+
+
+25.comm- Combines the functionality of diff and cmp
+
+26.sort- Linux command to sort the content of a file while outputting
+
+27.export- Export environment variables in Linux
+
+28.zip- Zip files in Linux
+
+29.unzip- Unzip files in Linux
+
+30.ssh- Secure Shell command in Linux
+
+31.service- Linux command to start and stop services
+
+32.ps- Display active processes
+
+33.kill and killall- Kill active processes by process ID or name
+
+34.df- Display disk filesystem information
+
+35.mount- Mount file systems in Linux
+
+36.chmod- Command to change file permissions
+
+37.chown- Command for granting ownership of files or folders
+
+38.ifconfig- Display network interfaces and IP addresses
+
+39.traceroute- Trace all the network hops to reach the destination
+
+40.wget- Direct download files from the internet
+
+41.ufw- Firewall command
+
+42.iptables- Base firewall for all other firewall utilities to interface with
+
+43.apt, pacman, yum, rpm- Package managers depending on the distribution
+
+44.sudo- Command to escalate privileges in Linux
+
+45.cal- View a command-line calendar
+
+46.alias- Create custom shortcuts for your regularly used commands
+
+47.dd- Majorly used for creating bootable USB sticks
+
+48.whereis- Locate the binary, source, and manual pages for a command
+
+49.whatis- Find what a command is used for
+
+50.top- View active processes live with their system usage
+
+51.useradd and usermod- Add a new user or change existing
+
+
+
+commands to use main
+====================
+
+scp: [secure copy protocal] remote to local
+
+       scp -i ~/.ssh/id_rsa -r ec2-user@52.53.237.242:~/file/home/ec2-user/
+       scp -i ~/.ssh/id\_rsa -r ec2-user@52.53.237.242:~/directory /root/**
+
+
+
+       local to remote [local means have a public key and private key & remote only public ]
+
+scp -i C:\Users\DELL\Downloads\RAM.pem C:\Users\DELL\OneDrive\Desktop\linux.txt ec2-user@43.205.231.2:/home/ec2-user/ [ local {window] file cpy into remote]
+
+scp -i C:\Users\DELL\downloads\RAM.pem -r ec2-user@43.205.231.2:/home/ec2-user/mama C:\Users\DELL\Downloads [ remote files copy into local ]
+
+ssh: secure shell
+
+      **ssh-keygen  \[ generating key in server ]**
+      \*\*ssh -i key.pem ec2-user@ip\*\* 
+
+
+du -sh * – Find heavy folders
+
+free -m – Check memory
+
+ps -ef | grep process [ httpd ] check service run or not
+
+sed – Edit configs fast
+ Automate config changes
+sed -i 's/8080/80/' nginx.conf
+ 
+tail -f [tail -f app.log] - Watch live logs during issue
+      
+grep -grep is used to search text or patterns inside files (mainly logs) grep -i error app.log  
+
+top - top shows real-time CPU, memory, and process usage.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+sudo mv /home/ec2-user/"GIT COMMANDS.txt" /root/ [ mv ec2-user to root user ]

@@ -1,0 +1,60 @@
+GIT COMMANDS 
+=============
+
+1} git add       [ both files means git add * this command ] coming to staging area
+
+2} git commit -m [ coming to local repositories]
+
+ofter adding the remote and  GitHub address 
+===========================================
+git remote add origin https://github.com/durgaprasaduniq/GITPRACTICE.git [11]
+
+NOW
+
+3} git push -u origin master or main or other branches [ local to remote ]
+
+ then asking GitHub username and GitHub token
+  no password no tokens means
+ 
+ git remote set-url origin git@github.com:durgaprasaduniq/gitpractice [both]
+                                                ssh -T git@github.com [ imp]
+NOW
+ 
+ 4} git pull [remote rep to working directory] or git fetch and git merge
+
+ 5} git branch { see branch name }
+
+ 6} git status [ see the exact track ]
+
+ 7} git restore --staged RRR && > RRR [this command use to delete content in file not file local rep to working dire }
+
+ 8} git branch durga [ create branch name ]
+
+ 9} git checkout durga [ change the branch ]                                                           difficult means push and pull problem {git pull --no-rebase}
+
+10] git branch -d durga [ delete the branch ]
+
+11] git reset HEAD RRR [ staging area to working space }
+
+12] git reset HEAD~1 devara [ local rep to "    "  latest add content delete line 1]
+
+13] git log & git log --oneline [ last visit GitHub seen & see commit id's ]
+ 
+14] git restore --source=origin/master -- RRR [ remote rep to working space ]
+ 
+15] git pull origin master --no-rebase --allow-unrelated-histories [When both local and remote repositories have commits and push is rejected then we use]
+
+16] git rm --cached filename &  git commit -m "Remove RRR and dasara from remote repo" & git push origin master { delete file from remote repo not in loacal repo]
+
+17] git show [ git show is used to view the details of a commit ]
+
+18] git diff [ different b/w same id's and different id's commit id's]
+  
+19] git revert commit id same file id[ changes the commit and content in remote repo] ofter apply the git revert then run the git push
+
+20] git reset [ soft hard mixed ] 
+  
+21 ] git reset --hard commit id [ new file means delete the file and content & existing file means remove the only content and commit ]
+22 ] git reset --mixed commit id [ local rep to working space and commit remove in this command ]                                command use means take down commit id   
+23 ] git reset --soft commit id [ local repo to staging area and commit remove] 
+  

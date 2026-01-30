@@ -1,0 +1,27 @@
+MAVEN COMMAND
+==============
+
+mvn -version
+mvn clean
+mvn compile
+mvn test
+mvn package
+
+
+NOW 
+
+    IN MAVEN DEPOLY THE TOMCAT PROCESS [port no : 8080]
+
+wget TOMCAT LINK
+
+tar -xvzf tomcat tar file
+
+mv tar file directoy name
+
+cp path desination
+ 
+in file have bin then cd bin
+ 
+./startup.sh 
+
+./shutdown.sh
