@@ -6,7 +6,7 @@ mvn clean
 mvn compile
 mvn test
 mvn package
-
+mvn clean package
 
 NOW 
 
@@ -23,5 +23,6 @@ cp path desination
 in file have bin then cd bin
  
 ./startup.sh 
+
 
 ./shutdown.sh
